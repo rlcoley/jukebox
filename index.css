@@ -4,6 +4,12 @@
   margin: 2%;
 }
 
+#albumCover{
+  height:200px;
+  width: 200px;
+  /* border: 2px solid; */
+}
+
 /* #songTitle {
   width: 100px;
   height: 100px;
