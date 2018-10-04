@@ -7,29 +7,37 @@ body{
 }
 
 .wrapper{
-  border: 5px solid;
+  border: 5px solid green;
+  width: 20%;
+  margin: 0 auto;
+  border-radius: 7%;
+  background-color: black;
 }
 
-.buttons{
+/* .buttons{
   border: 2px solid;
   width: 10%;
   margin: 2%;
-}
+} */
 
 #albumCover{
-  margin: 0 auto;
+  /* margin-top: 100px; */
+  margin: 20px auto;
   height:200px;
   width: 200px;
   /* border: 2px solid; */
 }
 
 #artist, #songTitle{
- /* color: white; */
+ color: white;
  font-weight: lighter;
+
 }
 
 .controls{
   text-align: center;
+  color: green;
+  margin-bottom: 5%;
 }
 /* #songTitle {
   width: 100px;
