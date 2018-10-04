@@ -24,8 +24,9 @@ var s5 = {url: new Audio('songs/paradiseextended.mp3'),title:'Paradise Extended'
 var s6 = {url: new Audio('songs/bigbank.mp3'),title:'Big Bank',cover: "'alcovers/bigbankalbumcover.jpg'", artistName:"YG, 2Chainz, Big Sean, Nicki Minaj" }
 var s7 = {url: new Audio('songs/losecontrol.mp3'),title:'Lose Control', cover: "'alcovers/losecontrolalbum.jpg'", artistName: "Missy Elliott, Ciara & Fat Man Scoop " }
 var s8 = {url: new Audio('songs/bounce.mp3'),title:'Bounce', cover: "'alcovers/collegrove.jpg'", artistName: "2Chainz & Lil Wayne" }
+var s9 = {url: new Audio('songs/ff7.mp3'),title:'Ride Out', cover: "'alcovers/ff.jpg'", artistName: "Kid Ink, Tyga, Wale, YG, Rich Homie Quan" }
 
-var listOfSongs = [s1, s2, s3 ,s4, s5, s6, s7, s8]
+var listOfSongs = [s1, s2, s3 ,s4, s5, s6, s7, s8, s9]
 var trackNum = 0;
 
 
