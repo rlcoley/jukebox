@@ -7,20 +7,23 @@ var previous = document.getElementById('previousSong')
 
 // Title of song
 var songTitle = document.getElementById('songTitle')
+var artist = document.getElementById('artist')
 
 // Album cover
  var albumCover = document.getElementById('albumCover')
 
 
 
-var s1 = { url: new Audio('songs/lordknows.mp3'), title: 'Lord Knows', cover: "'lordknowsalbumcover.png'"}
-var s2 = { url: new Audio('songs/donotdistrub.mp3'), title: 'Do Not Disturb', cover: "'drakealbumcover.jpg'"}
-var s3 = { url: new Audio('songs/patrick.mp3'), title: "Patrick's M.A.A.D City",cover: "'patrickalbumcover.jpg'" }
-var s4 = { url: new Audio('songs/superduperkyle.mp3'), title: 'SuperDuperKyle', cover: "'kylealbumcover.jpg'"}
-var s5 = {url: new Audio('songs/paradiseextended.mp3'),title:'Paradise Extended', cover: "'bigseanalbumcover.jpeg'" }
-var s6 = {url: new Audio('songs/bigbank.mp3'),title:'Big Bank',cover: "'bigbankalbumcover.jpg'" }
-var s7 = {url: new Audio('songs/losecontrol.mp3'),title:'Lose Control', cover: "'losecontrolalbum.jpg'" }
-var listOfSongs = [s1, s2, s3 ,s4, s5, s6, s7]
+var s1 = { url: new Audio('songs/lordknows.mp3'), title: 'Lord Knows', cover: "'alcovers/lordknowsalbumcover.png'"}
+var s2 = { url: new Audio('songs/donotdistrub.mp3'), title: 'Do Not Disturb', cover: "'alcovers/morelife.jpg'"}
+var s3 = { url: new Audio('songs/patrick.mp3'), title: "Patrick's M.A.A.D City",cover: "'alcovers/patrickalbumcover.jpg'" }
+var s4 = { url: new Audio('songs/superduperkyle.mp3'), title: 'SuperDuperKyle', cover: "'alcovers/kylealbumcover.jpg'"}
+var s5 = {url: new Audio('songs/paradiseextended.mp3'),title:'Paradise Extended', cover: "'alcovers/bigseanalbumcover.jpeg'" }
+var s6 = {url: new Audio('songs/bigbank.mp3'),title:'Big Bank',cover: "'alcovers/bigbankalbumcover.jpg'" }
+var s7 = {url: new Audio('songs/losecontrol.mp3'),title:'Lose Control', cover: "'alcovers/losecontrolalbum.jpg'" }
+var s8 = {url: new Audio('songs/bounce.mp3'),title:'Bounce', cover: "'alcovers/collegrove.jpg'" }
+
+var listOfSongs = [s1, s2, s3 ,s4, s5, s6, s7, s8]
 var trackNum = 0;
 
 
@@ -28,8 +31,10 @@ function playFunction() {
   // console.log(trackNum.url);
   listOfSongs[trackNum].url.play()
   songTitle.innerHTML = listOfSongs[trackNum].title
-  albumCover.style.backgroundImage = "url("+listOfSongs[trackNum].cover +")";
-  albumCover.style.backgroundImageSize = "cover";
+  // artist.innerHTML= listOfSongs[trackNum].artistName
+  albumCover.style.background = "url("+listOfSongs[trackNum].cover +")";
+  albumCover.style.backgroundSize = "cover";
+  albumCover.style.backgroundRepeat = "no-repeat";
 }
 
 function nextSong() {
@@ -43,10 +48,14 @@ function nextSong() {
     listOfSongs[trackNum].url.play()
     songTitle.innerHTML = listOfSongs[trackNum].title
     albumCover.style.backgroundImage = "url("+listOfSongs[trackNum].cover +")";
+    albumCover.style.backgroundSize = "cover";
+    albumCover.style.backgroundRepeat = "no-repeat";
   }else {
     listOfSongs[trackNum].url.play()
     songTitle.innerHTML = listOfSongs[trackNum].title
     albumCover.style.backgroundImage = "url("+listOfSongs[trackNum].cover +")";
+    albumCover.style.backgroundSize = "cover";
+    albumCover.style.backgroundRepeat = "no-repeat";
   }
 }
 
@@ -61,6 +70,8 @@ function previousSong() {
   listOfSongs[trackNum].url.play()
   songTitle.innerHTML = listOfSongs[trackNum].title
   albumCover.style.backgroundImage = "url("+listOfSongs[trackNum].cover +")";
+  albumCover.style.backgroundSize = "cover";
+  albumCover.style.backgroundRepeat = "no-repeat";
 
 }
 

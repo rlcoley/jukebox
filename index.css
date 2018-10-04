@@ -1,3 +1,15 @@
+*{
+  text-align: center;
+}
+
+body{
+  /* background-color: black */
+}
+
+.wrapper{
+  border: 5px solid;
+}
+
 .buttons{
   border: 2px solid;
   width: 10%;
@@ -5,11 +17,20 @@
 }
 
 #albumCover{
+  margin: 0 auto;
   height:200px;
   width: 200px;
   /* border: 2px solid; */
 }
 
+#artist, #songTitle{
+ /* color: white; */
+ font-weight: lighter;
+}
+
+.controls{
+  text-align: center;
+}
 /* #songTitle {
   width: 100px;
   height: 100px;
