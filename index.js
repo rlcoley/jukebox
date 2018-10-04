@@ -12,13 +12,10 @@ var songTitle = document.getElementById('songTitle')
 var artist = document.getElementById('artist')
 
 
-
-
 // Album cover
  var albumCover = document.getElementById('albumCover')
 
-
-
+// songs
 var s1 = { url: new Audio('songs/lordknows.mp3'), title: 'Lord Knows', cover: "'alcovers/creed3.jpeg'", artistName: "Meek Mill & Tory Lanez"}
 var s2 = { url: new Audio('songs/donotdistrub.mp3'), title: 'Do Not Disturb', cover: "'alcovers/morelife.jpg'", artistName: "Drake"}
 var s3 = { url: new Audio('songs/patrick.mp3'), title: "Patrick's M.A.A.D City",cover: "'alcovers/patrickalbumcover.jpg'", artistName: "Patrick" }
@@ -32,6 +29,7 @@ var listOfSongs = [s1, s2, s3 ,s4, s5, s6, s7, s8]
 var trackNum = 0;
 
 
+// Play Song
 function playFunction() {
   // console.log(trackNum.url);
   listOfSongs[trackNum].url.play()
@@ -45,6 +43,8 @@ function playFunction() {
   body.style.backgroundRepeat = "no-repeat";
 }
 
+
+// Play next song
 function nextSong() {
   listOfSongs[trackNum].url.pause()
   listOfSongs[trackNum].url.currentTime = 0
@@ -77,6 +77,7 @@ function nextSong() {
   }
 }
 
+// Play just that just passed
 function previousSong() {
   listOfSongs[trackNum].url.pause()
   listOfSongs[trackNum].url.currentTime = 0
@@ -98,10 +99,13 @@ function previousSong() {
 
 }
 
+
+// Pause song
 function pauseSong() {
   listOfSongs[trackNum].url.pause()
 }
 
+// Repeat song
 function repeatSong() {
   listOfSongs[trackNum].url.currentTime = 0
   listOfSongs[trackNum].url.play()
